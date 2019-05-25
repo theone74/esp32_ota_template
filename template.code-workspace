@@ -1,0 +1,45 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"extensions": {
+		"recommendations": [
+			"seunlanlege.action-buttons"
+		]
+	},
+	"settings": {
+		"files.autoSave": "onFocusChange",
+		"actionButtons": {
+			"defaultColor": "white",
+			"commands": [
+				{
+					"name": "︎✓",
+					"singleInstance": true,
+					"command": "make",
+				},
+				{
+					"name": "︎➤",
+					"singleInstance": true,
+					"command": "make flash && miniterm.py /dev/tty.SLAB_USBtoUART 115200",
+				},
+				{
+					"name": "♺",
+					"singleInstance": true,
+					"command": "make clean",
+				},
+				{
+					"name": "⛅",
+					"singleInstance": true,
+					"command": "make uploadwd",
+				},
+				{
+					"name": "❒",
+					"singleInstance": true,
+					"command": "miniterm.py /dev/tty.SLAB_USBtoUART 115200",
+				}
+			]
+		}
+	}
+}

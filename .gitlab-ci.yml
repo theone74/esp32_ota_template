@@ -1,0 +1,21 @@
+
+# see https://docs.gitlab.com/ce/ci/yaml/README.html for all available options
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+#  CI_DEBUG_TRACE: "true"
+
+stages:
+  - deploy
+
+
+deploy:
+  stage: deploy
+  image: espressif/esp32-ci-env
+  only:
+    - master
+  script:
+    - ./init.sh
+    - make uploadwd
+
+
