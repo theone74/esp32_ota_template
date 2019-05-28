@@ -25,3 +25,10 @@ cd ${ESP_ROOT}/tools/
 git clone https://github.com/espressif/esptool.git esptool
 cd -
 cp ${ESP_ROOT}/tools/esptool/esptool.py ${ESP_ROOT}/tools/esptool/esptool
+
+cd ${ESP_ROOT}/tools/
+wget https://github.com/igrr/mkspiffs/releases/download/0.2.3/mkspiffs-0.2.3-arduino-esp32-osx.tar.gz
+tar zxf mkspiffs-0.2.3-arduino-esp32-osx.tar.gz 
+mv mkspiffs-0.2.3-arduino-esp32-osx mkspiffs
+cd -
+

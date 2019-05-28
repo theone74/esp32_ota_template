@@ -4,9 +4,20 @@ CHIP      = esp32
 BUILD_DIR = build
 SKETCH    = src/_main.cpp
 PART_FILE = partition-table.csv
-CUSTOM_LIBS  = libs
-# LIBS = libs/HttpOTA
+# CUSTOM_LIBS  = libs
 # VERBOSE=1
+
+# LIBS = stuff/arduino-esp32/libraries/WiFi/src \
+# 		stuff/arduino-esp32/libraries/HTTPClient/src \
+# 		stuff/arduino-esp32/libraries/Update/src \
+# 		stuff/arduino-esp32/libraries/WiFiClientSecure/src \
+# 		stuff/arduino-esp32/libraries/Wire/src \
+# 		stuff/arduino-esp32/libraries/Ticker/src \
+# 		stuff/arduino-esp32/libraries/SPI/src \
+# 		stuff/arduino-esp32/libraries/SPIFFS/src \
+# 		stuff/arduino-esp32/libraries/FS/src 
+
+# BUILD_EXTRA_FLAGS= -Istuff/arduino-esp32/tools/sdk/include/freertos/freertos/
 
 # UPLOAD_PORT = /dev/ttyUSB1
 UPLOAD_SPEED = 921600
