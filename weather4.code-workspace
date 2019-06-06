@@ -22,7 +22,17 @@
 				{
 					"name": "︎➤",
 					"singleInstance": true,
-					"command": "make flash && miniterm.py /dev/tty.SLAB_USBtoUART 115200",
+					"command": "make flash && make monitor",
+				},
+				{
+					"name": "︎➲",
+					"singleInstance": true,
+					"command": "make flash_fs && make flash && make monitor",
+				},
+				{
+					"name": "︎●",
+					"singleInstance": true,
+					"command": "make flash_fs",
 				},
 				{
 					"name": "♺",
@@ -37,7 +47,7 @@
 				{
 					"name": "❒",
 					"singleInstance": true,
-					"command": "miniterm.py /dev/tty.SLAB_USBtoUART 115200",
+					"command": "make monitor",
 				}
 			]
 		}

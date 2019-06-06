@@ -96,6 +96,7 @@ namespace OTA {
 			}
 			if (st != WL_CONNECTED) {
 				Serial.println("Wifi still wait...");
+				WiFi.reconnect();
 				delay(CHECKUPDATEINTERVAL * 1000);
 				continue;
 			}

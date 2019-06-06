@@ -2,3 +2,6 @@
 .env
 build
 stuff
+libs/Spark*
+libs/Ada*
+
